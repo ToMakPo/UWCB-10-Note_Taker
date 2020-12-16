@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/ToMakPo/UWCB-11-Note_Taker/issues"
   },
-  "homepage": "https://github.com/ToMakPo/UWCB-11-Note_Taker#readme",
+  "homepage": "https://postnet-note-taker.herokuapp.com/",
   "dependencies": {
     "express": "^4.17.1"
   }
