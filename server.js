@@ -16,17 +16,17 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, "public/notes.html"))
 })
 
-app.get('/api/notes', (req, res) => {
-    res.json(database.getAPI())
+app.get('/api/notes', (req, res) => res.json(database.getAPI()))
+app.post('/api/notes', (req, res) => {
+    const note = req.body
+    database.saveNote(note)
+    res.send()
 })
-app.get('/api/notes/:id', (req, res) => {
+app.delete('/api/notes/:id', (req, res) => {
     const id = req.params.id
-    res.json(database.getNote(id))
+    database.deleteNode(id)
+    res.send()
 })
-
-app.post('create-note', data => database.createNote(...data))
-app.post('edit-note', data => database.editNote(...data))
-app.post('delete-note', data => database.deleteNode(...data))
 
 app.listen(PORT, () => {
     console.log('Listening on port: ' + PORT)
