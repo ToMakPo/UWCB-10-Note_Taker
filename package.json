@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ToMakPo/UWCB-10-Note_Taker.git"
+    "url": "git+https://github.com/ToMakPo/UWCB-11-Note_Taker.git"
   },
   "author": "Makai Post",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ToMakPo/UWCB-10-Note_Taker/issues"
+    "url": "https://github.com/ToMakPo/UWCB-11-Note_Taker/issues"
   },
-  "homepage": "https://github.com/ToMakPo/UWCB-10-Note_Taker#readme",
+  "homepage": "https://github.com/ToMakPo/UWCB-11-Note_Taker#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
